@@ -6,7 +6,7 @@ input [3:0] BCDin;
 output reg[7:0] LEDout;
 
 
-	always @ (BCDin)
+always @ (BCDin)
    begin
 	   if(BCDin == 0) 
 		LEDout <= 8'b00111111 ;
